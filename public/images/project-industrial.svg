@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Ambiente industrial modelado em 3D">
+  <defs>
+    <linearGradient id="steel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#59616a"/>
+      <stop offset=".45" stop-color="#24282c"/>
+      <stop offset="1" stop-color="#0b0908"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="675" fill="#151210"/>
+  <path d="M0 0h900v420H0z" fill="#2c2824"/>
+  <g stroke="#b9b1a5" stroke-width="10" opacity=".65">
+    <path d="M80 420 205 70M250 420 350 70M720 420 604 70M850 420 690 70"/>
+    <path d="M80 160h740M45 255h810M20 350h860"/>
+  </g>
+  <path d="M0 420h900v255H0z" fill="url(#steel)"/>
+  <path d="M120 335h250v85H120zM500 290h220v130H500z" fill="#9a6032"/>
+  <path d="M142 357h206M522 315h176" stroke="#f2c978" stroke-width="7" opacity=".8"/>
+  <path d="M90 500h720" stroke="#d59b45" stroke-width="5" opacity=".6"/>
+  <g fill="#11100f">
+    <rect x="160" y="444" width="120" height="82" rx="4"/>
+    <rect x="328" y="470" width="155" height="56" rx="4"/>
+    <rect x="560" y="444" width="170" height="82" rx="4"/>
+  </g>
+</svg>

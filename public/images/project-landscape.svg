@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Paisagismo e areas externas em 3D">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#756c63"/>
+      <stop offset="1" stop-color="#2c2824"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" x2="1">
+      <stop offset="0" stop-color="#d7c8b5"/>
+      <stop offset="1" stop-color="#736354"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="675" fill="#151210"/>
+  <path d="M0 0h900v360H0z" fill="url(#sky)"/>
+  <path d="M0 360h900v315H0z" fill="#2f4a32"/>
+  <path d="M130 675c110-190 230-270 400-315 88-24 184-52 270-128v443z" fill="url(#path)"/>
+  <path d="M105 360h220v-150h180v150h150v-96h145v96" fill="#211b17"/>
+  <path d="M105 360h695" stroke="#f2c978" stroke-width="8" opacity=".7"/>
+  <g fill="#1f6b3a">
+    <circle cx="98" cy="420" r="74"/>
+    <circle cx="275" cy="505" r="88"/>
+    <circle cx="715" cy="500" r="96"/>
+    <circle cx="820" cy="395" r="65"/>
+  </g>
+  <g fill="#d59b45" opacity=".72">
+    <circle cx="610" cy="168" r="18"/>
+    <circle cx="650" cy="203" r="8"/>
+  </g>
+</svg>

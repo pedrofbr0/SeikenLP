@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Render de interiores contemporaneos">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#211b17"/>
+      <stop offset=".55" stop-color="#8c6342"/>
+      <stop offset="1" stop-color="#0b0908"/>
+    </linearGradient>
+    <pattern id="brick" width="62" height="32" patternUnits="userSpaceOnUse">
+      <rect width="62" height="32" fill="#71361f"/>
+      <path d="M0 0h62M0 16h62M0 32h62M31 0v16M0 16v16M62 16v16" stroke="#d5a46f" stroke-opacity=".35" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="675" fill="#151210"/>
+  <path d="M0 0h900v428H0z" fill="url(#brick)"/>
+  <path d="M90 86h190v348H90zM570 96h210v350H570z" fill="#11100f"/>
+  <path d="M150 120c55 90 10 140 62 230M635 120c-38 85 26 150 10 260" stroke="#d59b45" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M0 428h900v247H0z" fill="url(#g)"/>
+  <path d="M95 470h520l210 116H210z" fill="#d7c8b5"/>
+  <path d="M142 482h455l148 82H225z" fill="none" stroke="#2c2824" stroke-opacity=".3" stroke-width="5"/>
+  <path d="M190 430h360v32H190z" fill="#d59b45" opacity=".75"/>
+  <circle cx="450" cy="184" r="16" fill="#f2c978"/>
+  <path d="M450 0v184" stroke="#2c2824" stroke-width="5"/>
+</svg>

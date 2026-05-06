@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Render arquitetonico industrial premium">
+  <defs>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#756c63"/>
+      <stop offset="0.58" stop-color="#b3a28d"/>
+      <stop offset="1" stop-color="#302a25"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" x2="1">
+      <stop offset="0" stop-color="#5b341d"/>
+      <stop offset="0.45" stop-color="#c78343"/>
+      <stop offset="1" stop-color="#6b3c20"/>
+    </linearGradient>
+    <linearGradient id="marble" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d0c0b"/>
+      <stop offset="0.48" stop-color="#2a2521"/>
+      <stop offset="1" stop-color="#11100f"/>
+    </linearGradient>
+    <pattern id="brick" width="82" height="38" patternUnits="userSpaceOnUse">
+      <rect width="82" height="38" fill="#73361f"/>
+      <path d="M0 0h82M0 38h82M0 19h82M41 0v19M0 19v19M82 19v19" stroke="#c57c4a" stroke-opacity=".38" stroke-width="3"/>
+      <path d="M0 0h82v38H0z" fill="#2b120c" opacity=".13"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#151210"/>
+  <path d="M0 0h1600v585H0z" fill="#594537"/>
+  <path d="M0 0h720l-94 590H0z" fill="#2a2521"/>
+  <path d="M598 88h476l-52 464H540z" fill="url(#brick)"/>
+  <path d="M1018 0h582v900h-582z" fill="url(#brick)" opacity=".86"/>
+  <path d="M1040 0h155v900h-155z" fill="url(#wood)" opacity=".98"/>
+  <path d="M1192 0h62v900h-62z" fill="#f2c978" opacity=".16"/>
+  <path d="M1280 0h82v900h-82z" fill="url(#wood)"/>
+  <path d="M1360 0h240v900h-240z" fill="#fff8ee" opacity=".76"/>
+  <path d="M690 152h250v408H690z" fill="url(#marble)"/>
+  <path d="M240 126h255v440H240z" fill="url(#marble)"/>
+  <g opacity=".68" stroke="#d59b45" stroke-width="2" fill="none">
+    <path d="M294 148c40 46 35 84 12 126s-14 88 35 132"/>
+    <path d="M785 176c-38 48-29 96 18 142 33 32 45 68 21 116"/>
+    <path d="M896 184c-26 56-19 118 24 190"/>
+  </g>
+  <path d="M265 382h300v176H265z" fill="#11100f"/>
+  <path d="M278 396h275v132H278z" fill="#0a0908"/>
+  <path d="M270 558h290v18H270z" fill="#d59b45" opacity=".68" filter="url(#glow)"/>
+  <path d="M690 552h250v18H690z" fill="#d59b45" opacity=".82" filter="url(#glow)"/>
+  <path d="M0 585h1600v315H0z" fill="url(#floor)"/>
+  <g opacity=".22" stroke="#fff8ee" stroke-width="2">
+    <path d="M0 645h1600M0 730h1600M0 815h1600"/>
+    <path d="M130 585 80 900M340 585l-10 315M560 585l32 315M790 585l78 315M1010 585l130 315M1240 585l192 315"/>
+  </g>
+  <path d="M75 642h820l405 230H300z" fill="#a9957f" filter="url(#softShadow)"/>
+  <path d="M75 642h820l405 230H300z" fill="#d5cab9" opacity=".6"/>
+  <path d="M122 658h755l324 184H326z" fill="none" stroke="#2b2824" stroke-opacity=".24" stroke-width="6"/>
+  <g stroke="#5b341d" stroke-width="7" opacity=".38">
+    <path d="M160 675h740M220 704h742M282 734h742M342 766h742M405 798h742"/>
+  </g>
+  <g fill="#0d0c0b" opacity=".9">
+    <ellipse cx="538" cy="784" rx="76" ry="34"/>
+    <ellipse cx="715" cy="826" rx="86" ry="40"/>
+    <ellipse cx="878" cy="802" rx="72" ry="35"/>
+    <ellipse cx="398" cy="748" rx="70" ry="32"/>
+  </g>
+  <g stroke="#0d0c0b" stroke-width="15" stroke-linecap="round">
+    <path d="M306 862 254 900M1042 858l90 42M412 870l-10 30M910 862l32 38"/>
+  </g>
+  <path d="M805 603c58 12 88 50 72 93-17 47-82 55-130 28-52-30-37-92 58-121z" fill="#11100f" filter="url(#softShadow)"/>
+  <g fill="#2f6e3c">
+    <path d="M804 610c-45-48-55-82-35-106 44 36 54 70 35 106z"/>
+    <path d="M817 612c28-62 70-86 111-69-26 52-64 78-111 69z"/>
+    <path d="M785 621c-62-16-96-48-94-91 58 8 94 39 94 91z"/>
+    <path d="M828 630c60-18 103-5 125 37-58 19-99 7-125-37z"/>
+  </g>
+  <path d="M0 0h1600v92H0z" fill="#cdd8dc" opacity=".72"/>
+  <g fill="url(#wood)">
+    <path d="M310 0h38l-92 92h-38z"/>
+    <path d="M455 0h38l-92 92h-38z"/>
+    <path d="M602 0h38l-92 92h-38z"/>
+    <path d="M748 0h38l-92 92h-38z"/>
+  </g>
+  <g stroke="#d7dce0" stroke-width="8" opacity=".8">
+    <path d="M250 92h655M270 70h655M290 48h655"/>
+  </g>
+  <g stroke="#2b2018" stroke-width="5">
+    <path d="M735 84v184"/>
+    <path d="M735 190 660 230"/>
+    <path d="M735 190l86 32"/>
+    <path d="M735 190l-8 96"/>
+  </g>
+  <g fill="#f2c978" filter="url(#glow)">
+    <circle cx="660" cy="230" r="14"/>
+    <circle cx="821" cy="222" r="14"/>
+    <circle cx="727" cy="286" r="13"/>
+    <circle cx="735" cy="190" r="10"/>
+  </g>
+  <g opacity=".86">
+    <rect x="85" y="120" width="168" height="58" rx="10" fill="#fff8ee"/>
+    <rect x="422" y="167" width="172" height="58" rx="10" fill="#fff8ee"/>
+  </g>
+  <path d="M0 0h1600v900H0z" fill="#000" opacity=".14"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Prancha tecnica CAD BIM">
+  <rect width="900" height="675" fill="#151210"/>
+  <rect x="70" y="60" width="760" height="555" rx="12" fill="#f4eadc"/>
+  <g stroke="#2c2824" stroke-width="3" fill="none" opacity=".72">
+    <path d="M135 130h250v180H135zM385 130h170v110H385zM555 130h210v300H555zM135 310h420v200H135z"/>
+    <path d="M170 168h180v105H170zM590 168h138v220H590zM180 350h330v118H180z"/>
+    <path d="M135 540h630M135 570h630M660 130v300M135 395h420"/>
+  </g>
+  <g stroke="#9f6824" stroke-width="2" fill="none" opacity=".75">
+    <path d="M120 105h660M120 105v430M122 104l16-16M780 105l-16-16M120 535l16 16"/>
+    <path d="M170 286h180M368 168v105M590 404h138"/>
+  </g>
+  <g fill="#2c2824" opacity=".78">
+    <rect x="145" y="555" width="130" height="8"/>
+    <rect x="300" y="555" width="90" height="8"/>
+    <rect x="705" y="555" width="45" height="8"/>
+  </g>
+  <path d="M70 60h760v48H70z" fill="#2c2824"/>
+  <path d="M100 83h230" stroke="#f2c978" stroke-width="7" stroke-linecap="round"/>
+</svg>
