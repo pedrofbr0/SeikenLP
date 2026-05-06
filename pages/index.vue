@@ -20,7 +20,7 @@ usePortfolioSeo({
     <SiteHeader :profile="profile" />
 
     <main>
-      <HeroSection :profile="profile" />
+      <SectionsHeroSection :profile="profile" />
 
       <div
         v-if="hasCmsWarning"
@@ -29,14 +29,14 @@ usePortfolioSeo({
         Strapi não conectado ou sem resposta no momento. O site está usando conteúdo fallback para desenvolvimento.
       </div>
 
-      <AboutSection :profile="profile" />
-      <ServicesSection />
-      <ToolsSection :skills="skills" />
-      <PortfolioSection :projects="projects" :pending="projectsPending" :error="projectsError" />
-      <ExperienceSection :experiences="experiences" />
-      <ClientsSection />
-      <DifferentialsSection />
-      <ContactSection :profile="profile" />
+      <SectionsAboutSection :profile="profile" />
+      <SectionsServicesSection />
+      <SectionsToolsSection :skills="skills" />
+      <SectionsPortfolioSection :projects="projects" :pending="projectsPending" :error="projectsError" />
+      <SectionsExperienceSection :experiences="experiences" />
+      <SectionsClientsSection />
+      <SectionsDifferentialsSection />
+      <SectionsContactSection :profile="profile" />
     </main>
 
     <footer class="border-t border-warm-100/10 bg-graphite-950 py-8">
