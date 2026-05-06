@@ -1,4 +1,4 @@
-# Lucas Rodrigues Portfolio
+# Lucas Rodrigues Portfolio Frontend
 
 Landing page premium em Nuxt 3 para o portfólio digital de Lucas Rodrigues, Desenhista Cadista e Projetista CAD/BIM.
 
@@ -7,62 +7,23 @@ Landing page premium em Nuxt 3 para o portfólio digital de Lucas Rodrigues, Des
 - Nuxt 3, Vue 3 e TypeScript
 - Tailwind CSS
 - Nuxt Image
-- Strapi CMS headless
 - VueUse Motion
 - SEO com `useSeoMeta`, Open Graph, Twitter Cards, canonical e Schema.org
-- Sitemap e robots via módulos Nuxt
+- Sitemap e robots
+- Consumo do Strapi CMS via REST API
 
-## Identidade visual
-
-A direção visual combina grafite, madeira, concreto, bege quente e âmbar, inspirada em render arquitetônico industrial premium: tijolo aparente, madeira natural, mármore preto, iluminação indireta e profundidade espacial. A primeira dobra usa imagem full-bleed com overlay escuro, evitando aparência de currículo e priorizando leitura de portfólio arquitetônico.
-
-## Arquitetura
-
-```txt
-components/
-  sections/
-    AboutSection.vue
-    ClientsSection.vue
-    ContactSection.vue
-    DifferentialsSection.vue
-    ExperienceSection.vue
-    HeroSection.vue
-    PortfolioSection.vue
-    ServicesSection.vue
-    ToolsSection.vue
-  ui/
-    Badge.vue
-    Button.vue
-    Card.vue
-    ProjectCard.vue
-    ProjectModal.vue
-    SectionTitle.vue
-composables/
-  useSeo.ts
-  useStrapi.ts
-  useStrapiExperience.ts
-  useStrapiProfile.ts
-  useStrapiProjects.ts
-  useStrapiSkills.ts
-data/
-  fallback.ts
-pages/
-  index.vue
-  projetos/[slug].vue
-server/api/__sitemap__/urls.ts
-types/
-public/images/
-docs/
-```
-
-## Rodando localmente
+## Rodar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-Configure o Strapi em `.env`:
+URL local: `http://localhost:3000`.
+
+## Variáveis de ambiente
+
+Use `.env.example` como referência:
 
 ```bash
 NUXT_PUBLIC_SITE_URL=https://lucasrodriguescad.com.br
@@ -70,23 +31,39 @@ NUXT_PUBLIC_STRAPI_URL=http://localhost:1337
 STRAPI_TOKEN=
 ```
 
-Sem Strapi, a aplicação usa conteúdo fallback para desenvolvimento e exibe um aviso discreto.
+`STRAPI_TOKEN` é opcional se o CMS liberar leitura pública para `find` e `findOne`.
 
-## Integração Strapi
+## Fallback
 
-O app consome:
+Se o Strapi estiver offline, a landing usa os dados de `data/fallback.ts`. Isso evita tela vazia durante desenvolvimento e demonstração.
 
-- `/api/profile?populate[profileImage]=true&populate[heroImage]=true`
-- `/api/projects?populate[coverImage]=true&populate[gallery]=true`
-- `/api/experiences`
-- `/api/skills`
+## Estrutura
 
-Os content types sugeridos estão em [docs/strapi-content-types.md](docs/strapi-content-types.md). O guia para popular projetos está em [docs/cms-population-guide.md](docs/cms-population-guide.md).
+```txt
+components/
+  sections/
+  ui/
+composables/
+data/
+pages/
+  index.vue
+  projetos/[slug].vue
+public/images/
+server/api/__sitemap__/urls.ts
+types/
+```
 
-## SEO e performance
+## Endpoints consumidos
 
-- `usePortfolioSeo` centraliza title, description, canonical, Open Graph, Twitter Cards e JSON-LD.
-- `server/api/__sitemap__/urls.ts` gera URLs de projetos publicados no Strapi para o sitemap.
-- Imagens usam `NuxtImg`, lazy loading nos cards/galerias e preload apenas no hero.
-- Componentes pesados como modal de projeto são carregados com `LazyUiProjectModal`.
-- A navegação é semântica, com heading hierarchy clara, aria-labels em botões críticos e contraste alto.
+- `GET /api/profile?populate[profileImage]=true&populate[heroImage]=true`
+- `GET /api/projects?populate[coverImage]=true&populate[gallery]=true&sort[0]=order:asc&sort[1]=year:desc`
+- `GET /api/projects?filters[slug][$eq]=:slug&populate[coverImage]=true&populate[gallery]=true`
+- `GET /api/experiences?sort[0]=startDate:desc`
+- `GET /api/skills?sort[0]=name:asc`
+
+## Build
+
+```bash
+npm run typecheck
+npm run build
+```

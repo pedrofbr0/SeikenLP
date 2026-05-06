@@ -40,6 +40,21 @@ const stringList = (value: any): string[] => {
   return []
 }
 
+const categoryLabels: Record<string, string> = {
+  interiores: 'Interiores',
+  arquitetonico: 'Arquitetônico',
+  industrial: 'Industrial',
+  paisagismo: 'Paisagismo',
+  reforma_restauro: 'Reforma e restauro',
+  renderizacao: 'Renderização',
+  cad_bim: 'CAD/BIM'
+}
+
+const categoryLabel = (value?: string) => {
+  if (!value) return 'CAD/BIM'
+  return categoryLabels[value] || value
+}
+
 export const useStrapiClient = () => {
   const config = useRuntimeConfig()
   const strapiUrl = config.public.strapiUrl.replace(/\/$/, '')
@@ -84,7 +99,7 @@ export const useStrapiClient = () => {
       slug: item.slug,
       shortDescription: item.shortDescription || '',
       fullDescription: item.fullDescription || item.shortDescription || '',
-      category: item.category || 'CAD/BIM',
+      category: categoryLabel(item.category),
       client: item.client,
       sector: item.sector,
       year: item.year,
